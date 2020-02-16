@@ -1,0 +1,66 @@
+@import "roboto.css";
+
+small {
+	color: #ff5a4c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+    visibility: hidden;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-control input {
+	border: 1px solid #FFFFFF;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-control.success input {
+    border-color: #FFFFFF;
+    transition: border-color 0.6s ease-out;
+}
+
+.form-control.error input {
+    border-color: #ff5a4c;
+    transition: border-color 0.6s ease-out;
+}
+
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-control small {
+    
+	color: #ff5a4c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
