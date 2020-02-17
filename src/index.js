@@ -23,7 +23,7 @@ function setSuccessFor(input) {
 }
 
 function isName(username) {
-    return /(^[А-Я]{1}[а-я]{1,14} [А-Я]{1}[а-я]{1,14}$)/.test(username)
+    return /^([А-ЯA-Z]|[А-ЯA-Z][\x27а-яa-z]{1,}|[А-ЯA-Z][\x27а-яa-z]{1,}\-([А-ЯA-Z][\x27а-яa-z]{1,}|(оглы)|(кызы)))\040[А-ЯA-Z][\x27а-яa-z]{1,}(\040[А-ЯA-Z][\x27а-яa-z]{1,})?$/.test(username)
 }
 
 function isPhone(phone) {
